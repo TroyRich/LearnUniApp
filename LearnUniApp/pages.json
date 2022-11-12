@@ -6,7 +6,46 @@
 				"navigationBarTitleText": "uni-app"
 			}
 		}
-	],
+        ,{
+            "path" : "pages/shengmu/shengmu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/yunmu/yunmu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc56f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"fontSize": "28",
+		"list": [
+			{
+				"pagePath": "pages/shengmu/shengmu",
+				"text": "声母"
+			},
+			{
+				"pagePath": "pages/yunmu/yunmu",
+				"text": "韵母"
+			},
+			{
+				"pagePath": "pages/index/index",
+				"text": "详情"
+			}
+		]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

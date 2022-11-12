@@ -1,9 +1,9 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
+	<view>
+		<navigator to>
+			<button>点击转跳</button>
+		</navigator>
+		<button @click="navTo()">ap专挑</button>
 	</view>
 </template>
 
@@ -11,42 +11,26 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				
 			}
 		},
 		onLoad() {
 
 		},
 		methods: {
-
+			navTo(){
+				uni.navigateTo({
+					url:"/pages/home/home"
+				})
+			}
+		},
+		onUnload() {
+			console.log("页面被关闭了")
 		}
+		
 	}
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+	
 </style>
